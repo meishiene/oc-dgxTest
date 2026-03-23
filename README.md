@@ -16,6 +16,7 @@
 ```text
 projects/dgx-playwright-python/
 ├── create_sample_excel.py
+├── create_business_flow_excel.py
 ├── data/
 ├── excel_webtest/
 │   ├── excel_loader.py
@@ -37,6 +38,10 @@ pip install -r requirements.txt
 python -m playwright install chromium
 python create_sample_excel.py
 python run_suite.py --excel data/cases.xlsx
+
+# 生成并运行业务流程版本
+python create_business_flow_excel.py
+python run_suite.py --excel data/dgx_business_flow_cases.xlsx
 ```
 
 如果想看浏览器执行过程：
